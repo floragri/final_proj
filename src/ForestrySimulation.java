@@ -54,7 +54,7 @@ public class ForestrySimulation implements Serializable {
     private static boolean initializeFromCSV(String forestName) {
         InputStream inputStream = ForestrySimulation.class.getClassLoader().getResourceAsStream(forestName + ".csv");
         if (inputStream == null) {
-            System.out.println("Error: CSV file not found.");
+            System.out.println("Error: file not found.");
             return false;
         }
         try (Scanner fileScanner = new Scanner(inputStream)) {
@@ -68,14 +68,14 @@ public class ForestrySimulation implements Serializable {
                     double growthRate = Double.parseDouble(data[3].trim());
                     currentForest.treesInForest.add(new Tree(species2, yearPlanted, height, growthRate / 100.0));
                 } catch (IllegalArgumentException e) {
-                    System.out.println("Error with data format in CSV: " + e.getMessage());
+                    System.out.println("Error with data format: " + e.getMessage());
                     return false;
                 }
             }
 
             return true;
         } catch (Exception e) {
-            System.out.println("Error processing CSV file: " + e.getMessage());
+            System.out.println("Error processing file: " + e.getMessage());
             return false;
         }
     }//end of class

@@ -43,15 +43,26 @@ public class Forest implements Serializable {
 
     // reap trees that exceed a specified height and replace them with new trees
     public void reapTrees(double minimumHeight) {
+        Random randomGenerator = new Random();
         for (int index = 0; index < treesInForest.size(); index++) {
-            if (treesInForest.get(index).height > minimumHeight) {
-                System.out.println("reaping the tall tree " + treesInForest.get(index));
-                treesInForest.remove(index);
-                addRandomTree(); // replace the reaped tree with a new random tree
-                index--; // adjust the index to account for the removed tree
+            Tree tree = treesInForest.get(index);
+            if (tree.height > minimumHeight) {
+                System.out.println("Reaping the tall tree: " + tree);
+                treesInForest.remove(index); // Remove the tall tree
+
+                // Add a new random tree at the same index
+                Species species = Species.values()[randomGenerator.nextInt(Species.values().length)];
+                int yearPlanted = randomGenerator.nextInt(21) + 2000;
+                double initialHeight = 10 + randomGenerator.nextDouble() * 10;
+                double growthRate = 0.10 + randomGenerator.nextDouble() * 0.10;
+                Tree newTree = new Tree(species, yearPlanted, initialHeight, growthRate);
+                treesInForest.add(index, newTree); // Add new tree at the same position
+
+                System.out.println("Replacing with new tree: " + newTree);
+                index--; // decrement index to account for shift after removal
             }
         }
-    } // end of reapTrees method
+    }
 
     // print details of all trees in the forest
     public void print() {

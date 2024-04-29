@@ -4,23 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84ee2882-b8ac-4aba-bb1a-cb68fcbcef6b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSC120_Final_Flora_Grinfeder.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Montane" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Montane.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Montane.ser" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/Acadian.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/Montane.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Forest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ForestrySimulation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Species.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TestRead.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tree.java" afterDir="false" />
+    <list default="true" id="84ee2882-b8ac-4aba-bb1a-cb68fcbcef6b" name="Changes" comment="final push">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Montane.db" beforeDir="false" afterPath="$PROJECT_DIR$/Montane.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ForestrySimulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ForestrySimulation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,10 +57,10 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+    <configuration name="ForestrySimulation" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ForestrySimulation" />
       <module name="CSC120_Final_Flora_Grinfeder" />
-      <option name="PROGRAM_PARAMETERS" value="Montane Acadian" />
+      <option name="PROGRAM_PARAMETERS" value="Montane nonexistant Acadian" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -95,9 +82,20 @@
       <option name="presentableId" value="Default" />
       <updated>1714247344971</updated>
     </task>
+    <task id="LOCAL-00001" summary="final push">
+      <option name="closed" value="true" />
+      <created>1714411393876</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1714411393876</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="final push" />
+    <option name="LAST_COMMIT_MESSAGE" value="final push" />
   </component>
 </project>
