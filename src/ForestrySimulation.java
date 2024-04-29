@@ -32,7 +32,6 @@ public class ForestrySimulation implements Serializable {
     } // end of main method
 
     // loads the forest data from serialized file
-// loads the forest data from serialized file or CSV if not found
     private static boolean loadForest(String forestName) {
         File File = new File(forestName + ".csv");
         if (File.exists()) {
@@ -50,7 +49,7 @@ public class ForestrySimulation implements Serializable {
         }
     }
 
-    // initialize forest from a CSV file
+    // initialize forest from file
     private static boolean initializeFromCSV(String forestName) {
         InputStream inputStream = ForestrySimulation.class.getClassLoader().getResourceAsStream(forestName + ".csv");
         if (inputStream == null) {
@@ -152,9 +151,9 @@ public class ForestrySimulation implements Serializable {
             currentForestIndex = (currentForestIndex + 1) % forestNames.length;
             boolean loaded = loadForest(forestNames[currentForestIndex]);
             if (loaded) {
-                System.out.println("Moved to next forest: " + forestNames[currentForestIndex]);
+                System.out.println("moved to next forest: " + forestNames[currentForestIndex]);
             } else {
-                System.out.println("Failed to load forest: " + forestNames[currentForestIndex]);
+                System.out.println("failed to load forest: " + forestNames[currentForestIndex]);
             }
         }
     }
